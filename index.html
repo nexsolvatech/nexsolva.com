@@ -113,6 +113,21 @@
             text-align: center;
             font-size: 0.9em;
         }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-email {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        /* --- *** CRITICAL CHANGE *** --- */
+        .footer-email a {
+            color: white;
+            text-decoration: none; /* Removes the underline */
+        }
+
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {
@@ -163,7 +178,12 @@
 </div>
 
 <footer>
-    © 2025 NexSolva Technologies Private Limited | All Rights Reserved.
+    <div class="footer-content">
+        <p class="footer-email">
+            Email: <a href="mailto:info@nexsolva.com">info@nexsolva.com</a>
+        </p>
+        <p style="margin: 0;">© 2025 NexSolva Technologies Private Limited | All Rights Reserved.</p>
+    </div>
 </footer>
 
 </body>
