@@ -1,0 +1,102 @@
+/* Custom CSS for NexSolva Technologies Website */
+
+/* --- 1. Root Variables (Brand Colors) --- */
+:root {
+    --nexsolva-primary: #0056b3;    /* Deep Blue - For buttons, highlights */
+    --nexsolva-secondary: #ffc107;  /* Amber/Gold - For accents */
+    --nexsolva-dark: #003366;       /* Very Dark Blue - For footer, dark navigation */
+    --nexsolva-light: #f8f9fa;      /* Very Light Gray - For light sections/backgrounds */
+    --nexsolva-text: #343a40;       /* Dark Gray - For main body text */
+}
+
+/* --- 2. Global Styling and Typography --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--nexsolva-text);
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, .fw-bold {
+    font-weight: 600 !important;
+}
+
+/* Custom class for section titles */
+.section-title {
+    color: var(--nexsolva-dark);
+    font-weight: 700 !important;
+}
+
+/* --- 3. Navigation Bar Styling --- */
+.navbar {
+    background-color: var(--nexsolva-dark) !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    color: var(--nexsolva-secondary) !important;
+    border-bottom: 3px solid var(--nexsolva-secondary);
+}
+
+/* --- 4. Button Styling --- */
+.btn-primary {
+    background-color: var(--nexsolva-primary);
+    border-color: var(--nexsolva-primary);
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #004085;
+    border-color: #004085;
+}
+
+.btn-outline-primary {
+    color: var(--nexsolva-primary);
+    border-color: var(--nexsolva-primary);
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: var(--nexsolva-primary);
+}
+
+/* --- 5. Custom Card Alignment Fix (CRITICAL FIX) --- */
+/* Ensures cards in the services section stretch evenly and buttons align at the bottom */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Allows the card body to consume all available space */
+    display: flex;
+    flex-direction: column;
+}
+
+/* This is the key: pushes the button to the bottom of the stretched card-body */
+.card-body .btn {
+    margin-top: auto !important; 
+}
+
+/* --- 6. Contact Page Map Placeholder --- */
+.map-placeholder {
+    min-height: 400px;
+    line-height: 400px; /* Vertically centers the text */
+    font-style: italic;
+    color: #6c757d;
+}

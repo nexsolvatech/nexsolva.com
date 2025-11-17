@@ -3,188 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexSolva Technologies Private Limited - Coming Soon</title>
-
-    <style>
-        /* General Reset & Body Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f7f9; /* Lighter, subtle background */
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Header Styles */
-        header {
-            background: #003366; /* Deep Blue */
-            padding: 20px 0;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header img {
-            height: 70px;
-            margin-bottom: 10px;
-            /* In a real scenario, this would be centered or a dedicated logo section */
-        }
-        header .title-block {
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2em;
-            font-weight: 600;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-
-        /* Coming Soon Banner */
-        .coming-soon {
-            background: #e8f1ff; /* Light, contrasting blue */
-            padding: 15px;
-            text-align: center;
-            font-size: 1.3em;
-            font-weight: 700;
-            color: #003366;
-            letter-spacing: 1px;
-            border-bottom: 3px solid #0056b3; /* Accent line */
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .section:nth-child(odd) {
-            background: #fff; /* White background for contrast */
-        }
-        .section h2 {
-            color: #0056b3; /* Medium Blue for headings */
-            font-size: 2em;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #e0e0e0;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        /* Services List Styles */
-        .service-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        .service-list li {
-            background: #ffffff;
-            border: 1px solid #ddd;
-            padding: 15px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            font-size: 1.05em;
-            color: #003366; /* Deep Blue text */
-            flex-basis: calc(33.33% - 15px); /* Three items per row */
-            min-width: 250px;
-            text-align: left;
-            transition: transform 0.2s;
-        }
-        .service-list li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Footer Styles */
-        footer {
-            background: #003366;
-            padding: 15px;
-            color: white;
-            text-align: center;
-            font-size: 0.9em;
-        }
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .footer-email {
-            font-size: 1.1em;
-            margin-bottom: 5px;
-        }
-        /* Style to remove underline */
-        .footer-email a {
-            color: white;
-            text-decoration: none; 
-        }
-
-
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .service-list li {
-                flex-basis: calc(50% - 15px); /* Two items per row on tablets */
-            }
-        }
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-            .service-list li {
-                flex-basis: 100%; /* Single item per row on mobile */
-            }
-        }
-    </style>
+    <title>NexSolva Technologies - IT Solutions & Managed Services</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
 </head>
-
 <body>
 
-<header>
-    <img src="logo.png" alt="NexSolva Logo">
-    <div class="title-block">
-        <h1>NexSolva Technologies Private Limited</h1>
-        <p>IT Solutions | Networking | Hardware Support</p>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">NexSolva Technologies</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="solutions.html">Solutions</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="py-5 text-center text-white" style="background-color: var(--nexsolva-dark);">
+    <div class="container py-5">
+        <h1 class="display-3 fw-bold mb-3">Managed IT Services That Drive Growth</h1>
+        <p class="lead mb-4">Secure, scalable, and personalized IT solutions designed to keep your business running flawlessly, 24/7.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg me-3">Start a Project</a>
+        <a href="services.html" class="btn btn-outline-light btn-lg">View Services</a>
     </div>
 </header>
 
-<div class="coming-soon">
-    Our Full Fledged Website is Coming Soon!
-</div>
+<section class="py-5 bg-white">
+    <div class="container text-center">
+        <h2 class="section-title mb-5">Our Guiding Principles</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-lock fa-3x text-primary mb-3"></i>
+                <h3>Security First</h3>
+                <p class="text-muted">Proactive defense strategies to protect your critical data against emerging threats.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-rocket fa-3x text-primary mb-3"></i>
+                <h3>Unmatched Reliability</h3>
+                <p class="text-muted">Guaranteed uptime and responsive support ensuring your operations never stall.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                <h3>Scalable Growth</h3>
+                <p class="text-muted">IT infrastructure that evolves with your business, from startup to enterprise level.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="section" id="about">
-    <h2>👋 About Us</h2>
-    <p>NexSolva is your dedicated partner for robust and reliable technology solutions. We provide end-to-end IT services, cutting-edge software solutions, comprehensive network support, and reliable hardware assistance for both corporate offices and residential customers.</p>
-</div>
+<section class="py-5" style="background-color: var(--nexsolva-light);">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-title mb-2">How We Help Your Business</h2>
+            <p class="lead text-muted mb-5">Explore our most popular service categories.</p>
+        </div>
+        
+        <div class="row d-flex align-items-stretch">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cloud fa-2x text-primary mb-3"></i>
+                        <h4 class="card-title">Cloud Management</h4>
+                        <p class="card-text">Migrate, manage, and optimize your assets on AWS, Azure, and Google Cloud.</p>
+                        <a href="services.html" class="btn btn-outline-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-headset fa-2x text-primary mb-3"></i>
+                        <h4 class="card-title">24/7 IT Support</h4>
+                        <p class="card-text">Round-the-clock help desk support for users, hardware, and routine maintenance.</p>
+                        <a href="services.html" class="btn btn-outline-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+                        <h4 class="card-title">Cybersecurity</h4>
+                        <p class="card-text">Advanced threat protection, firewalls, and compliance to mitigate risk.</p>
+                        <a href="services.html" class="btn btn-outline-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="section" id="services">
-    <h2>🛠 Our Core Services</h2>
-    <ul class="service-list">
-        <li>✔ *IT & System Maintenance:* All IT-related services, bug fixing & system upkeep.</li>
-        <li>✔ *Networking:* Full setup, configuration, and troubleshooting for networks.</li>
-        <li>✔ *Hardware Support:* Computer hardware, peripheral, and operating system support.</li>
-        <li>✔ *Software Development:* Custom software and application development.</li>
-        <li>✔ *Enterprise Solutions:* High-End Servers & comprehensive Enterprise Server Solutions.</li>
-        <li>✔ *Cloud Computing:* Expert setup and management of modern Cloud Solutions.</li>
-    </ul>
-</div>
-
-<footer>
-    <div class="footer-content">
-        <p class="footer-email">
-            Email: <a href="mailto:info@nexsolva.com">info@nexsolva.com</a>
-        </p>
-        <p style="margin: 0;">© 2025 NexSolva Technologies Private Limited | All Rights Reserved.</p>
+<footer class="py-4 text-white" style="background-color: var(--nexsolva-dark);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>NexSolva Technologies</h5>
+                <p class="small text-muted">Innovating IT, Powering Your Future.</p>
+                <div class="social-icons">
+                    <a href="#" class="text-white me-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter-square fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-facebook-square fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="solutions.html" class="text-white text-decoration-none">Solutions</a></li>
+                    <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <address class="small text-muted">
+                    123 Tech Avenue, Suite 400<br>
+                    Innovation City, CA 90210<br>
+                    Email: info@nexsolva.com<br>
+                    Phone: (555) 123-4567
+                </address>
+            </div>
+        </div>
+        <div class="text-center pt-3 border-top border-secondary">
+            <p class="mb-0 small text-muted">&copy; <span id="currentYear2"></span> NexSolva Technologies. All rights reserved.</p>
+        </div>
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('currentYear2').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
