@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexSolva Technologies Private Limited - Coming Soon</title>
+
+    <style>
+        /* General Reset & Body Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f9; /* Lighter, subtle background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: #003366; /* Deep Blue */
+            padding: 20px 0;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 70px;
+            margin-bottom: 10px;
+            /* In a real scenario, this would be centered or a dedicated logo section */
+        }
+        header .title-block {
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 600;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        /* Coming Soon Banner */
+        .coming-soon {
+            background: #e8f1ff; /* Light, contrasting blue */
+            padding: 15px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #003366;
+            letter-spacing: 1px;
+            border-bottom: 3px solid #0056b3; /* Accent line */
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section:nth-child(odd) {
+            background: #fff; /* White background for contrast */
+        }
+        .section h2 {
+            color: #0056b3; /* Medium Blue for headings */
+            font-size: 2em;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e0e0e0;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Services List Styles */
+        .service-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .service-list li {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            font-size: 1.05em;
+            color: #003366; /* Deep Blue text */
+            flex-basis: calc(33.33% - 15px); /* Three items per row */
+            min-width: 250px;
+            text-align: left;
+            transition: transform 0.2s;
+        }
+        .service-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #003366;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .service-list li {
+                flex-basis: calc(50% - 15px); /* Two items per row on tablets */
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .service-list li {
+                flex-basis: 100%; /* Single item per row on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="NexSolva Logo">
+    <div class="title-block">
+        <h1>NexSolva Technologies Private Limited</h1>
+        <p>IT Solutions | Networking | Hardware Support</p>
+    </div>
+</header>
+
+<div class="coming-soon">
+    Our Full Fledged Website is Coming Soon!
+</div>
+
+<div class="section" id="about">
+    <h2>👋 About Us</h2>
+    <p>NexSolva is your dedicated partner for robust and reliable technology solutions. We provide end-to-end IT services, cutting-edge software solutions, comprehensive network support, and reliable hardware assistance for both corporate offices and residential customers.</p>
+</div>
+
+<div class="section" id="services">
+    <h2>🛠 Our Core Services</h2>
+    <ul class="service-list">
+        <li>✔ *IT & System Maintenance:* All IT-related services, bug fixing & system upkeep.</li>
+        <li>✔ *Networking:* Full setup, configuration, and troubleshooting for networks.</li>
+        <li>✔ *Hardware Support:* Computer hardware, peripheral, and operating system support.</li>
+        <li>✔ *Software Development:* Custom software and application development.</li>
+        <li>✔ *Enterprise Solutions:* High-End Servers & comprehensive Enterprise Server Solutions.</li>
+        <li>✔ *Cloud Computing:* Expert setup and management of modern Cloud Solutions.</li>
+    </ul>
+</div>
+
+<footer>
+    © 2025 NexSolva Technologies Private Limited | All Rights Reserved.
+</footer>
+
+</body>
+</html>
