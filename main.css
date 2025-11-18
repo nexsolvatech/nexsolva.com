@@ -1,102 +1,111 @@
-/* Custom CSS for NexSolva Technologies Website */
+/* =========================================================
+   NEXSOLVA TECHNOLOGIES: main.css
+   Defines global styles, typography, and color variables.
+   ========================================================= */
 
 /* --- 1. Root Variables (Brand Colors) --- */
 :root {
     --nexsolva-primary: #0056b3;    /* Deep Blue - For buttons, highlights */
     --nexsolva-secondary: #ffc107;  /* Amber/Gold - For accents */
     --nexsolva-dark: #003366;       /* Very Dark Blue - For footer, dark navigation */
-    --nexsolva-light: #f8f9fa;      /* Very Light Gray - For light sections/backgrounds */
-    --nexsolva-text: #343a40;       /* Dark Gray - For main body text */
+    --nexsolva-light: #e8f1ff;      /* Very Light Blue - For light backgrounds */
+    --nexsolva-text: #343a40;       /* Dark Text */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
 }
 
-/* --- 2. Global Styling and Typography --- */
+/* --- 2. Global Resets and Typography --- */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-body);
     color: var(--nexsolva-text);
-    background-color: #fff;
+    background-color: #f8f9fa; /* Light grey background for contrast */
 }
 
-h1, h2, h3, h4, .fw-bold {
-    font-weight: 600 !important;
+h1, h2, h3, h4, h5, h6, .section-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
 }
 
-/* Custom class for section titles */
 .section-title {
     color: var(--nexsolva-dark);
-    font-weight: 700 !important;
 }
 
 /* --- 3. Navigation Bar Styling --- */
 .navbar {
-    background-color: var(--nexsolva-dark) !important;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-color: var(--nexsolva-dark);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .navbar-brand {
     font-size: 1.5rem;
-    color: #fff !important;
+    font-weight: 700;
+    color: #ffffff !important;
 }
 
 .nav-link {
-    color: rgba(255, 255, 255, 0.7) !important;
-    margin: 0 10px;
-    transition: color 0.3s;
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 }
 
-.nav-link:hover {
-    color: #fff !important;
+.nav-link:hover,
+.nav-item .active {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
 }
 
-.nav-link.active {
-    color: var(--nexsolva-secondary) !important;
+.nav-item .active {
     border-bottom: 3px solid var(--nexsolva-secondary);
+    background-color: transparent !important; /* Keep background transparent for active link */
 }
 
-/* --- 4. Button Styling --- */
+/* --- 4. Custom Bootstrap Overrides --- */
 .btn-primary {
     background-color: var(--nexsolva-primary);
     border-color: var(--nexsolva-primary);
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #004085;
-    border-color: #004085;
+    background-color: var(--nexsolva-dark);
+    border-color: var(--nexsolva-dark);
 }
 
-.btn-outline-primary {
-    color: var(--nexsolva-primary);
-    border-color: var(--nexsolva-primary);
+/* --- 5. Service Lists (Used in services.html) --- */
+.service-list li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+.service-list .text-primary {
+    color: var(--nexsolva-primary) !important;
 }
 
-.btn-outline-primary:hover {
-    color: #fff;
-    background-color: var(--nexsolva-primary);
+/* --- 6. Footer Styling --- */
+footer a {
+    color: #cccccc !important;
+    transition: color 0.3s ease;
 }
 
-/* --- 5. Custom Card Alignment Fix (CRITICAL FIX) --- */
-/* Ensures cards in the services section stretch evenly and buttons align at the bottom */
-.card {
-    display: flex;
-    flex-direction: column;
+footer a:hover {
+    color: #ffffff !important;
 }
 
-.card-body {
-    flex-grow: 1; /* Allows the card body to consume all available space */
-    display: flex;
-    flex-direction: column;
+.social-icons a {
+    font-size: 1.5rem;
 }
 
-/* This is the key: pushes the button to the bottom of the stretched card-body */
-.card-body .btn {
-    margin-top: auto !important; 
-}
-
-/* --- 6. Contact Page Map Placeholder --- */
-.map-placeholder {
-    min-height: 400px;
-    line-height: 400px; /* Vertically centers the text */
-    font-style: italic;
-    color: #6c757d;
+/* --- 7. Responsive Adjustments (Optional but Recommended) --- */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        background-color: var(--nexsolva-dark);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .nav-item .active {
+        border-bottom: none;
+    }
 }
